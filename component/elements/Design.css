@@ -1,0 +1,76 @@
+*
+{
+    margin: 0;
+    padding:0;
+    /* background: rgba(231, 71, 71, 0.527); */
+    box-sizing: border-box;
+
+}
+
+
+.container{
+    position: relative;
+    overflow: auto;
+    height: 70vh;
+    width: 100%;
+    padding-left:0;
+    padding-right: 0;
+    scroll-snap-type: y mandatory;
+    background: rgba(231, 71, 71, 0.527);
+}
+
+.section{
+    position: relative;
+    height: 100%;
+    background-blend-mode: multiply;
+    background: rgba(59, 83, 68, 0.527);
+}
+
+.section:nth-child(1){
+    background: rgba(10, 10, 10, 0.527) url(../../image/33.jpg);
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section:nth-child(2){
+    background: rgba(234, 255, 115, 0.527) url(../../image/7.jpg);
+
+    height: 100vh;
+    max-height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 1rem;;
+}
+
+.section .content{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    
+}
+
+.section .content h2{
+    background: rgb(129, 194, 238);
+    color: rgb(19, 18, 18);
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.section .content p{
+    background: rgb(237, 240, 90);
+    color: #111;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+}
